@@ -1,0 +1,22 @@
+project_id = "gpfyejxokywdkudkeywv"
+
+[auth]
+# Site URL for development (will be overridden in production)
+site_url = "http://localhost:8080"
+
+# Additional redirect URLs
+additional_redirect_urls = [
+  "http://localhost:8080/**"
+]
+
+# Email configuration
+[auth.email]
+# Custom invitation template
+[auth.email.template.invite]
+subject = "You're invited to join THEMISON"
+content_path = "./supabase/templates/invite.html"
+
+# Custom confirmation template  
+[auth.email.template.confirmation]
+subject = "Welcome to THEMISON - Confirm your account"
+content_path = "./supabase/templates/confirmation.html"
